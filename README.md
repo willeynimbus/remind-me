@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+````markdown
+# Remind Me App
+
+Remind Me is a web application built using Next.js, Tailwind CSS, and TypeScript that allows users to create and manage collections of tasks for different people. Each task can have a deadline, and users can create, delete, and manage multiple collections. The app also includes a dark mode for a better user experience. Data is stored using Prisma.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
+- [Screenshot](#screenshot)
+
+## Features
+
+- **Create Collections**: Create collections by the name of a person.
+- **Manage Tasks**: Add as many tasks as needed to each collection, each with its own deadline.
+- **Delete Collections**: Remove collections when they are no longer needed.
+- **Dark Mode**: Toggle between light and dark modes.
+- **Data Persistence**: All data is stored and managed using Prisma.
+
+## Technologies Used
+
+- **Next.js**: A React framework for production.
+- **Tailwind CSS**: A utility-first CSS framework.
+- **TypeScript**: A typed superset of JavaScript.
+- **Prisma**: A next-generation ORM for Node.js and TypeScript.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (>= 14.x)
+- npm (>= 6.x) or yarn (>= 1.x)
+- PostgreSQL (or any other supported database by Prisma)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/remind-me-app.git
+   cd remind-me-app
+   ```
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up your database:
+
+   - Create a `.env` file in the root directory.
+   - Add your database connection string to the `.env` file:
+     ```env
+     DATABASE_URL="your-database-connection-string"
+     ```
+
+4. Run Prisma migrations to set up the database schema:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+
+### Running the Application
+
+To start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `dev`: Runs the application in development mode.
+- `build`: Builds the application for production.
+- `start`: Starts the application in production mode.
+- `lint`: Runs ESLint to check for linting errors.
+- `prisma`: Various Prisma commands (e.g., `migrate`, `generate`).
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feel free to modify this `README.md` file to better suit your project's specific details and requirements.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Screenshot
+
+- ![alt text](image.png)
