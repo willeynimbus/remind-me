@@ -1,4 +1,3 @@
-````markdown
 # Remind Me App
 
 Remind Me is a web application built using Next.js, Tailwind CSS, and TypeScript that allows users to create and manage collections of tasks for different people. Each task can have a deadline, and users can create, delete, and manage multiple collections. The app also includes a dark mode for a better user experience. Data is stored using Prisma.
@@ -40,10 +39,10 @@ Remind Me is a web application built using Next.js, Tailwind CSS, and TypeScript
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/remind-me-app.git
+   git clone https://github.com/willeynimbus/remind-me.git
    cd remind-me-app
    ```
-````
+
 
 2. Install dependencies:
 
